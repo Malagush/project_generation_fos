@@ -7,7 +7,7 @@
           {{ control.caption }}
         </label>
         <input
-          v-if="control.control === 'TEXT'" 
+        v-else-if="control.control === 'TEXT'" 
           :id="control.id"
           :placeholder="control.caption"
           v-model="formValues[control.id]"
@@ -17,7 +17,7 @@
           @input="updateValue(control.id, $event.target.value)"
         />
         <select
-          v-if="control.control === 'SELECT'"
+        v-else-if="control.control === 'SELECT'"
           :id="control.id"
           v-model="formValues[control.id]"
           :required="control.required === 'true'"
@@ -28,7 +28,7 @@
           <option disabled value="">Выберите вариант</option>
           <option v-for="option in control.options" :key="option" :value="option">{{ option }}</option>
         </select>
-        <div v-if="control.control === 'CHECKBOX'" class="form-check"> 
+        <div v-else-if="control.control === 'CHECKBOX'" class="form-check"> 
           <input
             type="checkbox"
             :id="control.id"
@@ -41,11 +41,11 @@
             {{ control.caption }}
           </label>
         </div>
-        <div v-if="errorMessages.length && control.required === 'true' && !formValues[control.id]" class="error-message">
+        <div v-else-if="errorMessages.length && control.required === 'true' && !formValues[control.id]" class="error-message">
           Поле "{{ control.caption }}" обязательно для заполнения. 
         </div>
         <button
-          v-if="control.control === 'BUTTON'" 
+        v-else-if="control.control === 'BUTTON'" 
           type="button"
           @click="handleButtonClick(control.caption)"
           class="form-control"
