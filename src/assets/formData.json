@@ -1,0 +1,106 @@
+{
+    "title": "Открыть договор",
+    "controls": [
+      {
+        "id": "5927943491",
+        "control": "FORM",
+        "caption": "Открыть договор",
+        "parentID": "",
+        "tabIndex": 0,
+        "position": 0
+      },
+      {
+        "id": "5927943492",
+        "control": "LABEL",
+        "caption": "Ваше имя",
+        "parentID": "5927943491",
+        "tabIndex": -1,
+        "position": 1
+      },
+      {
+        "id": "5927943493",
+        "control": "TEXT",
+        "caption": "Ваше имя",
+        "parentID": "5927943491",
+        "tabIndex": 1,
+        "position": 2,
+        "type": "text",
+        "required": "true"
+      },
+      {
+        "id": "5927943494",
+        "control": "LABEL",
+        "caption": "Выберите вид кредита",
+        "parentID": "5927943491",
+        "tabIndex": -1,
+        "position": 3
+      },
+      {
+        "id": "5927943495",
+        "control": "SELECT",
+        "caption": "Вид кредита",
+        "parentID": "5927943491",
+        "tabIndex": 2,
+        "position": 4,
+        "required": "true",
+        "options": [
+          "Ипотека",
+          "Автокредит",
+          "Потребительский кредит",
+          "Кредитная карта"
+        ]
+      },
+      {
+        "id": "5927943496",
+        "control": "LABEL",
+        "caption": "Выберите финансовый продукт",
+        "parentID": "5927943491",
+        "tabIndex": -1,
+        "position": 5
+      },
+      {
+        "id": "5927943497",
+        "control": "SELECT",
+        "caption": "Финансовый продукт",
+        "parentID": "5927943491",
+        "tabIndex": 3,
+        "position": 6,
+        "required": "true",
+        "options": [
+          "Кредитный продукт A",
+          "Кредитный продукт B",
+          "Кредитный продукт C",
+          "Кредитный продукт D"
+        ]
+      },
+      {
+        "id": "5927943498",
+        "control": "CHECKBOX",
+        "caption": "Подтверждаю введенную информацию",
+        "parentID": "5927943491",
+        "tabIndex": 4,
+        "position": 7,
+        "required": "true"
+      },
+      {
+        "id": "5927943499",
+        "control": "BUTTON",
+        "caption": "OK",
+        "parentID": "5927943491",
+        "tabIndex": 5,
+        "position": 8,
+        "type": "button",
+        "actionType": "submit"  
+      },
+      {
+        "id": "5927943500",
+        "control": "BUTTON",
+        "caption": "Отмена",
+        "parentID": "5927943491",
+        "tabIndex": 6,
+        "position": 9,
+        "type": "button",
+        "actionType": "reset" 
+      }
+    ]
+  }
